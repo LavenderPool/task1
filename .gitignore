@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Окружение и секреты
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Прочее
+.DS_Store
+.pytest_cache/
