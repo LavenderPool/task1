@@ -103,6 +103,15 @@ alembic upgrade head
 uvicorn app.main:app --reload
 ```
 
+## Тесты
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+Тесты используют in-memory SQLite и не требуют запущенный PostgreSQL.
+
 ## Структура проекта
 
 ```text
@@ -122,5 +131,8 @@ uvicorn app.main:app --reload
 ├── docker-compose.yml
 ├── .dockerignore
 ├── .env.example
-└── requirements.txt
+├── requirements.txt
+├── requirements-dev.txt
+├── pytest.ini
+└── tests/
 ```
